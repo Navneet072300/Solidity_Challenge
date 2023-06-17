@@ -1,0 +1,45 @@
+//SPDX-License-Identifier:GPL-3.0
+pragma solidity ^0.8.0;
+
+contract SimpleContract {
+    uint256 public uintVariable;
+    bool public boolVariable;
+    string public stringVariable;
+    address public addressVariable;
+
+    function setUintVariable(uint256 newValue) public returns (uint256) {
+        uintVariable = newValue;
+        return uintVariable;
+    }
+
+    function getUintVariable() public view returns (uint256) {
+        return uintVariable;
+    }
+
+    function setBoolVariable(bool newValue) public returns (bool) {
+        boolVariable = newValue;
+        return boolVariable;
+    }
+
+    function getBoolVariable() public view returns (bool) {
+        return boolVariable;
+    }
+
+    function setStringVariable(string memory newValue) public returns (string memory) {
+        stringVariable = newValue;
+        return stringVariable;
+    }
+
+    function getStringVariable() public view returns (string memory) {
+        return stringVariable;
+    }
+
+    function setAddressVariable(address newValue) public returns (address) {
+        addressVariable = newValue;
+        return addressVariable;
+    }
+
+    function getAddressVariable() public view returns (address) {
+        return addressVariable;
+    }
+}
